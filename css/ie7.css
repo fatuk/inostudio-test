@@ -1,0 +1,49 @@
+.main-header__info {
+  width: 740px;
+  text-align: right;
+}
+.main-menu {
+  /*width: 690px;*/
+}
+.main-menu__item {
+  /*float: right;*/
+}
+.btn[type="submit"] {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.input_subscribe {
+  width: 110px;
+}
+.form_subscribe {
+  height: 20px;
+}
+.speach-balloon {
+  width: 270px;
+}
+.btn__label {
+  line-height: normal;
+  font-size: 32px;
+}
+.btn__sub-label {
+  line-height: 10px;
+}
+.container {
+  width: 960px;
+  padding: 0;
+}
+.btn_bottom {
+  bottom: -23px;
+}
+.form__cell {
+  margin: 0;
+  padding: 0;
+}
+.form-overlay {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  margin: -20px;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22..%2Fless%2Fie7.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAmB%3BEACjB%2CYAAA%3BEACA%2CiBAAA%3B%3BAAES%3B%3B%3BAAIM%3B%3B%3BAAIb%2CIAAgB%3BEACnB%2CqBAAA%3BEACA%2CUAAA%3BEACA%2CSAAA%3B%3BAAGgB%3BEAChB%2CYAAA%3B%3BAAGe%3BEACf%2CYAAA%3B%3BAAGe%3BEACf%2CYAAA%3B%3BAAGW%3BEACX%2CmBAAA%3BEACA%2CeAAA%3B%3BAAGe%3BEACf%2CiBAAA%3B%3BAAGU%3BEACV%2CYAAA%3BEACA%2CUAAA%3B%3BAAGW%3BEACX%2CaAAA%3B%3BAAGW%3BEACX%2CSAAA%3BEACA%2CUAAA%3B%3BAAGa%3BEACZ%2CYAAA%3BEACE%2CYAAW%2CqDAAX%3BEACA%2CyBAAA%3BEACA%2CaAAA%22%7D */

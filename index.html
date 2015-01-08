@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inostudio test task</title>
+	<link rel="stylesheet" href="css/all.css">
+
+<!--[if IE 7]>
+	<link rel="stylesheet" href="css/ie7.css">
+<![endif]-->
+
+	<script src="js/libs.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<!-- Site header -->
+	<div class="site-header">
+		<div class="form form_login">
+			<div class="container">
+				<form action="#">
+
+					<div class="form__row">
+						<a href="#" class="facebook-login">
+							<img src="img/facebook-btn.png" alt="" class="facebook-login__img">
+						</a>
+						<input type="text" class="input left" name="username" placeholder="Username">
+						
+						<div class="form__cell">
+							<input type="password" class="input" name="password" placeholder="Password">
+							<a href="#" class="form__link form__link_bottom">Forgot Password?</a>
+						</div>
+
+						<div class="form__cell">
+							<input class="btn btn_green" type="submit" value="Login">
+							<a href="#" class="btn btn_orange btn_bottom">Create&nbsp;account</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="main-header">
+			<div class="container">
+				<div class="main-header__logo">
+					<img src="media/logo.png" alt="" class="main-header__logo-img">
+				</div>
+
+				<div class="main-header__menu">
+					<div class="main-header__info">
+						<span class="support-text">CUSTOMER SUPPORT</span>
+						<span class="support-number">1-651-888-8888</span>
+					</div>
+
+					<div class="main-menu">
+						<ul class="main-menu__list">
+							<li class="main-menu__item active">
+								<a href="#" class="main-menu__link">Home</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Salvage vehicles</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Boats</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Motocycles</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Jet skis</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Tons parts</a>
+							</li>
+							<li class="main-menu__item">
+								<a href="#" class="main-menu__link">Buyer FAQ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<i class="big-shadow"></i>
+
+	<div class="container">
+		<div class="aside">
+			<div class="filter-search form">
+				<div class="js-form-overlay form-overlay"></div>
+				<form id="filtersForm" action="#">
+					<label for="search" class="form__label">I'm looking for a...</label>
+					<input type="text" class="input input_search" id="search" placeholder="Car, truck, etc.">
+
+					<div class="js-select-wrapper">
+						<select name="make" id="make" class="select">
+							<option class="select__option">Make</option>
+							<option value="Ford" class="select__option">Ford</option>
+							<option value="Audi" class="select__option">Audi</option>
+						</select>
+					</div>
+
+					<div class="js-select-wrapper">
+						<select name="model" id="model" class="select">
+							<option class="select__option">Model</option>
+						</select>
+					</div>
+
+					<div class="js-select-wrapper">
+						<select name="year" id="year" class="select">
+							<option class="select__option">Year</option>
+						</select>
+					</div>
+
+					<div class="js-select-wrapper">
+						<select name="titleStatus" id="titleStatus" class="select">
+							<option class="select__option">Title Status</option>
+						</select>
+					</div>
+					<input type="submit" value="Search" class="btn btn_orange btn_margin">
+				</form>
+			</div>
+			<i class="small-shadow"></i>
+
+			<div class="location-search">
+				<form action="#">
+					<label for="zipCode" class="form__label">Search by location</label>
+					<input type="text" class="input input_search-by-location" id="zipCode" placeholder="Enter Zip Code">
+
+					<div class="form__row">
+						<label for="radius" class="form__label form__label_small">Radius within</label>
+						<select name="radius" id="radius" class="select select_small">
+							<option class="select__option">Miles</option>
+							<option value="1" class="select__option">Ford</option>
+						</select>
+					</div>
+					
+					<input type="submit" value="Search" class="btn btn_orange btn_margin">
+				</form>
+			</div>
+			<i class="small-shadow"></i>
+
+			<div class="additional-links">
+				<ul class="additional-links__list">
+					<li class="additional-links__item">
+						<a href="#" class="additional-links__link truck">Find a transporter</a>
+					</li>
+					<li class="additional-links__item">
+						<a href="#" class="additional-links__link money">Need finance?</a>
+					</li>
+				</ul>
+			</div>
+			<i class="small-shadow"></i>
+
+			<div class="social-btns left">
+				<ul class="social-btns__list">
+					<li class="social-btns__item">
+						<a href="#" class="social-btns__link">
+							<img src="img/facebook-ico.png" alt="" class="social-btns__img">
+						</a>
+					</li>
+					<li class="social-btns__item">
+						<a href="#" class="social-btns__link">
+							<img src="img/in-ico.png" alt="" class="social-btns__img">
+						</a>
+					</li>
+					<li class="social-btns__item">
+						<a href="#" class="social-btns__link">
+							<img src="img/twitter-ico.png" alt="" class="social-btns__img">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<div class="main-content">
+			<div class="info">
+				<span class="info__text">Currently listing 102,234 cars</span>
+			</div>
+
+			<!-- Banner -->
+			<div class="banner">
+				<div class="speach-balloon">
+					<p class="speach-balloon__text">
+						List your inventvory for free and only pay a small transaction fee when it sells!<br>
+						<strong>That’s it. Nice & simple!</strong>
+					</p>
+				</div>
+
+				<a href="#" class="btn btn_big-orange btn_banner">
+					<h2 class="btn__label">START NOW!</h2>
+					<p class="btn__sub-label">Create a free account to BUY or SELL</p>
+				</a>
+
+				<div class="banner-video">
+					<h3 class="banner-video__title">How it works and why it’s better</h3>
+					<a href="#" class="banner-video__link">
+						<img src="img/video-preview.jpg" alt="" class="banner-video__img">
+					</a>
+				</div>
+			</div>
+
+			<!-- Subscribe -->
+			<div class="subscribe">
+				<h3 class="subscribe__title">Custom Email Alerts</h3>
+				<p class="subscribe__text">Enter your email here and set up your own custom alert.</p>
+				
+				<div class="form form_subscribe">
+					<form action="#">
+						<input type="text" class="input input_subscribe" name="email" placeholder="Email address">
+						<input type="submit" value="Submit" class="btn btn_orange">
+					</form>
+				</div>
+			</div>
+
+			<!-- Products -->
+			<div class="products-tiles">
+				<h2 class="products-tiles__title">New arrivals</h2>
+				<ul class="products-tiles__list">
+
+					<li class="product-tile">
+						<h3 class="product-tile__title">2005 FORD EXPLORER XLE</h3>
+
+						<img src="media/car.jpg" alt="" class="product-tile__img">
+
+						<div class="product-tile__info">
+
+							<ul class="product-tile__features-list">
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Title:</span>
+									<span class="product-tile__feature-value">Marked</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Make:</span>
+									<span class="product-tile__feature-value">Ford</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Model:</span>
+									<span class="product-tile__feature-value">Explorer</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Year:</span>
+									<span class="product-tile__feature-value">2005</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="product-tile__text-block">
+							<p class="product-tile__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam se nulla a nunc pretium ut congue nunc imperdiet. Nulla et mi sit amet libero tempor faucibus ac id quam. Aliquam sollicitudin facilisis posuere. Cras tempor imperdiet.
+							</p>
+							<a href="#" class="product-tile__read-more">Read more</a>
+						</div>
+
+						<div class="product-tile__price-block">
+							<span class="product-tile__price">$650</span>
+							<span class="product-tile__mileage">123,000 miles</span>
+							<a href="@" class="btn btn_green-simple">SHOW&nbsp;ME THE&nbsp;CARFAX</a>
+						</div>
+					</li>
+					<i class="medium-shadow"></i>
+					<li class="product-tile">
+						<h3 class="product-tile__title">2005 FORD EXPLORER XLE</h3>
+
+						<img src="media/car.jpg" alt="" class="product-tile__img">
+
+						<div class="product-tile__info">
+
+							<ul class="product-tile__features-list">
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Title:</span>
+									<span class="product-tile__feature-value">Marked</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Make:</span>
+									<span class="product-tile__feature-value">Ford</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Model:</span>
+									<span class="product-tile__feature-value">Explorer</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Year:</span>
+									<span class="product-tile__feature-value">2005</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="product-tile__text-block">
+							<p class="product-tile__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam se nulla a nunc pretium ut congue nunc imperdiet. Nulla et mi sit amet libero tempor faucibus ac id quam. Aliquam sollicitudin facilisis posuere. Cras tempor imperdiet.
+							</p>
+							<a href="#" class="product-tile__read-more">Read more</a>
+						</div>
+
+						<div class="product-tile__price-block">
+							<span class="product-tile__price">$650</span>
+							<span class="product-tile__mileage">123,000 miles</span>
+							<a href="@" class="btn btn_green-simple">SHOW&nbsp;ME THE&nbsp;CARFAX</a>
+						</div>
+					</li>
+					<i class="medium-shadow"></i>
+					<li class="product-tile">
+						<h3 class="product-tile__title">2005 FORD EXPLORER XLE</h3>
+
+						<img src="media/car.jpg" alt="" class="product-tile__img">
+
+						<div class="product-tile__info">
+
+							<ul class="product-tile__features-list">
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Title:</span>
+									<span class="product-tile__feature-value">Marked</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Make:</span>
+									<span class="product-tile__feature-value">Ford</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Model:</span>
+									<span class="product-tile__feature-value">Explorer</span>
+								</li>
+								<li class="product-tile__feature-item">
+									<span class="product-tile__feature-label">Year:</span>
+									<span class="product-tile__feature-value">2005</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="product-tile__text-block">
+							<p class="product-tile__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam se nulla a nunc pretium ut congue nunc imperdiet. Nulla et mi sit amet libero tempor faucibus ac id quam. Aliquam sollicitudin facilisis posuere. Cras tempor imperdiet.
+							</p>
+							<a href="#" class="product-tile__read-more">Read more</a>
+						</div>
+
+						<div class="product-tile__price-block">
+							<span class="product-tile__price">$650</span>
+							<span class="product-tile__mileage">123,000 miles</span>
+							<a href="@" class="btn btn_green-simple">SHOW&nbsp;ME THE&nbsp;CARFAX</a>
+						</div>
+					</li>
+					<i class="medium-shadow medium-shadow_last"></i>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="site-footer">
+		<div class="container">
+			<img src="img/logo-footer.png" alt="" class="site-footer__logo">
+
+			<div class="row">
+				<div class="footer-menu">
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Terms of Use</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Privacy Police</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">About Us</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">About Us</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Need Financing</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Find a Transporter</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="site-footer__copyright">© Copyright 2011 Site.com</div>
+			</div>
+
+			<div class="social-btns">
+				<ul class="social-btns__list">
+					<li class="social-btns__item">
+						<a href="#" class="social-btns__link">
+							<img src="img/facebook-ico.png" alt="" class="social-btns__img">
+						</a>
+					</li>
+					<li class="social-btns__item">
+						<a href="#" class="social-btns__link">
+							<img src="img/in-ico.png" alt="" class="social-btns__img">
+						</a>
+					</li>
+					<li class="social-btns__item">
+						<a href="#" class="social-btns__link">
+							<img src="img/twitter-ico.png" alt="" class="social-btns__img">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

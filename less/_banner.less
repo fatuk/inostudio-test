@@ -1,0 +1,51 @@
+.banner {
+	position: relative;
+	display: inline-block;
+	width: 758px;
+	height: 221px;
+	background: #f2f2f2;
+	background: url('../img/girl.jpg') no-repeat;
+	border: solid 1px #e2e2e2;
+}
+
+.speach-balloon {
+	position: absolute;
+	left: 155px;
+	top: 10px;
+	width: 300px;
+	border: solid 1px #b6b6b6;
+	background: #f7f7f7;
+	color: #626262;
+	font-size: 21px;
+	.border-radius(15px);
+	padding: 7px 15px;
+	.box-sizing(border-box);
+	opacity: 0.9;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		margin-left: -39px;
+		margin-top: 65px;
+		background: url('../img/balloon-arrow.png');
+		opacity: 0.9;
+	}
+}
+
+.banner-video {
+	display: inline-block;
+	float: right;
+	margin-right: 15px;
+
+	&__title {
+		font-size: 17px;
+		color: #626262;
+		margin: 10px 0;
+	}
+
+	iframe {
+		float: right;
+	}
+}

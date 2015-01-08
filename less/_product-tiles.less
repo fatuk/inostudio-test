@@ -1,0 +1,112 @@
+.products-tiles {
+
+	&__title {
+		font-size: 30px;
+		text-transform: uppercase;
+		color: #f76e00;
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.product-tile {
+	&:extend(.clearfix all);
+	margin-bottom: 5px;
+
+	&__title {
+		font-size: 14px;
+		font-weight: normal;
+		color: #f76e00;
+		text-transform: uppercase;
+	}
+
+	&__info {
+		width: 110px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	&__img {
+		width: 160px;
+		height: 104px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	&__features-list {
+		&:extend(.clearfix all);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		color: #626262;
+		float: left;
+	}
+
+	&__feature-item {
+		&:extend(.clearfix all);
+		clear: both;
+		display: inline-block;
+		width: 100%;
+	}
+
+	&__feature-label {
+		font-weight: bold;
+		float: left;
+		margin-right: 3px;
+	}
+
+	&__feature-value {
+		float: left;
+	}
+
+	&__text-block {
+		font-size: 12px;
+		color: #626262;
+		width: 345px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	&__text {
+		margin-bottom: 7px;
+	}
+
+	&__read-more {
+		text-transform: uppercase;
+		font-size: 12px;
+		color: #f76e00;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__price-block {
+		width: 105px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	&__price {
+		font-size: 30px;
+		font-weight: bold;
+		color: #626262;
+		margin: 0;
+	}
+
+	&__mileage {
+		color: #626262;
+		font-size: 12px;
+		display: inherit;
+		line-height: 10px;
+		margin-top: 3px;
+		margin-bottom: 10px;
+	}
+}

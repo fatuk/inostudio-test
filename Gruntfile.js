@@ -18,7 +18,8 @@ module.exports = function (grunt) {
                     
                 },
                 files: {
-                    'css/all.css': ['less/all.less']
+                    'css/all.css': ['less/all.less'],
+                    'css/ie7.css': ['less/ie7.less']
                 }
             },
             release: {
@@ -26,8 +27,22 @@ module.exports = function (grunt) {
                     cleancss: true
                 },
                 files: {
-                    'css/all.css': ['less/all.less']
+                    'css/all.css': ['less/all.less'],
+                    'css/ie7.css': ['less/ie7.less']
                 }
+            }
+        },
+        //------------------------------------------------------------
+        concat: {
+            options: {
+                separator: ';',
+            },
+            dist: {
+                src: [
+                    'bower_components/jquery/jquery.min.js', 
+                    'bower_components/jquery.customSelect/jquery.customSelect.min.js'
+                ],
+                dest: 'js/libs.js',
             }
         },
         //------------------------------------------------------------
@@ -54,6 +69,12 @@ module.exports = function (grunt) {
                     livereload: true
                 },
                 files: 'css/*.css'
+            },
+            js: {
+                options: {
+                    livereload: true
+                },
+                files: 'js/*.js'
             },
             html: {
                 options: {

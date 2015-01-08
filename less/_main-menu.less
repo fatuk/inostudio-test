@@ -1,0 +1,42 @@
+.main-menu {
+	float: right;
+
+	&__list {
+		&:extend(.clearfix all);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__item {
+		float: left;
+		background: url('../img/menu-main-tile.png') repeat-x;
+		background-size: 100% 100%;
+		border-top: solid 1px #c6dead;
+		border-left: solid 1px #9dc773;
+		border-right: solid 1px #9dc773;
+
+		&:hover {
+			background: url('../img/menu-main-hover-tile.png') repeat-x;
+			background-size: 100% 100%;
+		}
+
+		&.active {
+			background: #f7a51b;
+			.box-shadow(0px 0px 15px 5px #ed8414 inset); 
+			border-top: solid 1px #d8b466;
+			border-left: solid 1px #fbe2c8;
+			border-right: solid 1px #9dc773;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14px;
+		padding: 14px 8px;
+		color: #fff;
+	}
+}

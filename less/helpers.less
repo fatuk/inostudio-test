@@ -1,0 +1,88 @@
+/* Helpers */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+.big-shadow {
+	background: url('../img/shadow-big.png');
+	display: block;
+	width: 1139px;
+	height: 17px;
+	margin: 0 auto;
+}
+
+.medium-shadow {
+	background: url('../img/shadow-medium.png');
+	display: block;
+	width: 761px;
+	height: 9px;
+	margin: 0 auto;
+
+	&_last {
+		margin-bottom: 20px;
+	}
+}
+
+.small-shadow {
+	background: url('../img/shadow-small.png');
+	display: block;
+	width: 144px;
+	height: 17px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.left {
+	float: left !important;
+}
+
+.right {
+	float: right !important;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.row {
+	&:extend(.clearfix all);
+	position: relative;
+	display: inline-block;
+	height: 40px;
+}
+
+.cell {
+	&:extend(.clearfix all);
+	position: relative;
+	display: inline-block;
+}
+
+.form-overlay {
+	display: none;
+	background: orange url('../img/ajax-loader.gif') no-repeat;
+	background-position: 50% 50%;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	margin: -10px;
+	margin-bottom: 0;
+}
